@@ -471,12 +471,9 @@ function setupEventListeners() {
     cartClose.addEventListener('click', closeCartDrawer);
     cartOverlay.addEventListener('click', closeCartDrawer);
 
-    // Checkout button placeholder click
+    // Checkout button redirect to checkout page
     checkoutBtn.addEventListener('click', () => {
-        alert("Thank you for shopping with AURA. Checkout process is complete!");
-        cart = [];
-        saveCartAndRefresh();
-        closeCartDrawer();
+        window.location.href = 'checkout.html';
     });
 
     // 6. Modal Closing Triggers
